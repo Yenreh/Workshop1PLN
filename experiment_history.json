@@ -1,0 +1,76 @@
+{
+  "experiments": [
+    {
+      "timestamp": "2025-09-25T18:19:12.687750",
+      "configuration": {
+        "model_type": "LSTM",
+        "embedding_dim": 300,
+        "lstm_units": 128,
+        "dense_units": 128,
+        "epochs": 30,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "dataset_take": 5000,
+        "max_len": 50,
+        "padding_type": "pre",
+        "min_words_per_sentence": 4,
+        "gpu_used": true
+      },
+      "dataset_info": {
+        "vocab_size": 11492,
+        "train_samples": 97499,
+        "test_samples": 24375,
+        "dataset_name": "jhonparra18/spanish_billion_words_clean"
+      },
+      "training_results": {
+        "final_train_loss": 4.345649242401123,
+        "final_train_accuracy": 0.19766920804977417,
+        "final_val_loss": 6.876570701599121,
+        "final_val_accuracy": 0.12441025674343109,
+        "epochs_trained": 10,
+        "model_parameters": 5166228
+      },
+      "evaluation_metrics": {
+        "perplexity": 484.90776386237286,
+        "perplexity_interpretation": "Regular"
+      },
+      "experiment_id": 1
+    },
+    {
+      "timestamp": "2025-09-25T18:22:51.554893",
+      "configuration": {
+        "model_type": "BiLSTM",
+        "embedding_dim": 300,
+        "lstm_units": 128,
+        "dense_units": 128,
+        "epochs": 30,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "dataset_take": 5000,
+        "max_len": 50,
+        "padding_type": "pre",
+        "min_words_per_sentence": 4,
+        "gpu_used": true
+      },
+      "dataset_info": {
+        "vocab_size": 11492,
+        "train_samples": 97499,
+        "test_samples": 24375,
+        "dataset_name": "jhonparra18/spanish_billion_words_clean"
+      },
+      "training_results": {
+        "final_train_loss": 4.424537181854248,
+        "final_train_accuracy": 0.1930665820837021,
+        "final_val_loss": 6.776916027069092,
+        "final_val_accuracy": 0.12487179785966873,
+        "epochs_trained": 10,
+        "model_parameters": 5402260
+      },
+      "evaluation_metrics": {
+        "perplexity": 525.6706395095501,
+        "perplexity_interpretation": "Pobre"
+      },
+      "experiment_id": 2
+    }
+  ]
+}
