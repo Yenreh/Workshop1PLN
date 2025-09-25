@@ -44,7 +44,7 @@ DENSE_UNITS = 32  # Número de unidades en la capa densa intermedia
 USE_BIDIRECTIONAL = False  # Usar BiLSTM en lugar de LSTM unidireccional
 
 # Training parameters
-EPOCHS = 10  # Número de épocas de entrenamiento
+EPOCHS = 2  # Número de épocas de entrenamiento
 BATCH_SIZE = 8  # Tamaño del batch
 VALIDATION_SPLIT = 0.2  # Porcentaje de datos para validación
 LEARNING_RATE = 0.001  # Tasa de aprendizaje
@@ -370,9 +370,16 @@ def evaluate_model_performance(history, model, X_test, y_test):
     
     # Evaluar en conjunto de prueba
     print("\n=== EVALUACIÓN EN CONJUNTO DE PRUEBA ===")
-    test_loss, test_accuracy = model.evaluate(X_test, y_test, verbose=0)
+    test_results = model.evaluate(X_test, y_test, verbose=0)
+    test_loss = test_results[0]
+    test_accuracy = test_results[1]
     print(f"Test Loss: {test_loss:.4f}")
     print(f"Test Accuracy: {test_accuracy:.4f}")
+    
+    # Si hay métricas adicionales, mostrarlas también
+    if len(test_results) > 2:
+        test_top_k_accuracy = test_results[2]
+        print(f"Test Top-K Accuracy: {test_top_k_accuracy:.4f}")
     
     # Calcular perplejidad
     print("\n=== CÁLCULO DE PERPLEJIDAD ===")
