@@ -33,19 +33,19 @@ CURSO: Procesamiento de Lenguaje Natural (PLN) - Workshop 1
 DATASET_NAME = "jhonparra18/spanish_billion_words_clean"
 DATASET_SPLIT = "train"
 DATASET_STREAMING = True
-DATASET_TAKE = 5000  # Número de ejemplos a tomar del dataset
+DATASET_TAKE = 10000  # Número de ejemplos a tomar del dataset
 MIN_WORDS_PER_SENTENCE = 4  # Filtro: oraciones con al menos N palabras
 OOV_TOKEN = "<OOV>"  # Token para palabras fuera del vocabulario
 
 # Model architecture parameters
-EMBEDDING_DIM = 32  # Dimensión del embedding de palabras
-LSTM_UNITS = 32  # Número de unidades en las capas LSTM
-DENSE_UNITS = 32  # Número de unidades en la capa densa intermedia
+EMBEDDING_DIM = 300  # Dimensión del embedding de palabras
+LSTM_UNITS = 128  # Número de unidades en las capas LSTM
+DENSE_UNITS = 128  # Número de unidades en la capa densa intermedia
 USE_BIDIRECTIONAL = False  # Usar BiLSTM en lugar de LSTM unidireccional
 
 # Training parameters
-EPOCHS = 2  # Número de épocas de entrenamiento
-BATCH_SIZE = 8  # Tamaño del batch
+EPOCHS = 30  # Número de épocas de entrenamiento
+BATCH_SIZE = 64  # Tamaño del batch
 VALIDATION_SPLIT = 0.2  # Porcentaje de datos para validación
 LEARNING_RATE = 0.001  # Tasa de aprendizaje
 
@@ -67,6 +67,13 @@ from tensorflow.keras.callbacks import EarlyStopping
 from sklearn.model_selection import train_test_split
 from datasets import load_dataset
 import math
+
+
+gpus = tf.config.list_physical_devices('GPU')
+if gpus:
+    print(f"GPU detectada: {gpus}")
+else:
+    print("No se detectó GPU, usando CPU.")
 
 # ----------------------------
 # 1. Frases en español (dataset)
