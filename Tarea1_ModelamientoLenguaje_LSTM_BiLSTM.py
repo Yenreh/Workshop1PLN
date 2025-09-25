@@ -285,9 +285,6 @@ def generate_text(model, tokenizer, seed_text, max_length, num_words_to_generate
     
     return generated_text
 
-# ----------------------------
-# 9. Evaluación y pruebas del modelo
-# ----------------------------
 
 # ----------------------------
 # 9. Evaluación y pruebas del modelo
