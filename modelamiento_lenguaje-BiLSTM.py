@@ -2,11 +2,12 @@
 TAREA 1: MODELAMIENTO DEL LENGUAJE CON BiLSTM
 ============================================
 
-Este script implementa un modelo de lenguaje bidireccional (BiLSTM) para la predicción 
+Este script implementa un modelo de lenguaje bidireccional (BiLSTM) y unidireccional (LSTM) para la predicción 
 de la siguiente palabra en secuencias de texto en español.
 
 CARACTERÍSTICAS PRINCIPALES:
 - Arquitectura BiLSTM (Bidirectional LSTM) configurable
+- Arquitectura LSTM unidireccional configurable
 - Parámetros completamente parametrizados para fácil experimentación
 - Funciones avanzadas de predicción y generación de texto
 - Evaluación completa del modelo con métricas detalladas
@@ -18,9 +19,9 @@ CONFIGURACIÓN:
 - Ajusta DATASET_TAKE para cambiar el tamaño del dataset
 - Personaliza la arquitectura modificando EMBEDDING_DIM, LSTM_UNITS, etc.
 
-AUTOR: [Tu nombre]
+AUTOR: Herney Eduardo Quintero Trochez
 FECHA: 2025
-UNIVERSIDAD: [Tu universidad]
+UNIVERSIDAD: Universidad Del Valle
 CURSO: Procesamiento de Lenguaje Natural (PLN) - Workshop 1
 """
 
