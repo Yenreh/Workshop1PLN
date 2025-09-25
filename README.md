@@ -1,7 +1,11 @@
-# TAREA 1: Aplicación de RNNs al Modelamiento de Lenguaje en Español (LSTM/BiLSTM)
+# Taller 1: Aplicación de RNNs al Modelamiento de Lenguaje en Español (LSTM/BiLSTM)
 
 **Curso:** Fundamentos de Computación Inteligente  
-**Objetivo:** Experimentar con modelos de Redes Neuronales Recurrentes (RNNs), específicamente LSTM y BiLSTM, para el modelado del lenguaje en español.
+**Objetivo:** Experimentar con modelos de Redes Neuronales Recurrentes (RNNs), específicamente LSTM y BiLSTM, para el modelado del lenguaje en español.  
+**Autor:** Herney Eduardo Quintero Trochez  
+**Fecha:** 2025  
+**Universidad:** Universidad Del Valle  
+**Curso:** Procesamiento de Lenguaje Natural (PLN) - Taller 1
 
 ## Componentes Implementados
 
