@@ -111,7 +111,7 @@ pip install tensorflow datasets numpy scikit-learn matplotlib
 
 ### Versiones Probadas
 - Python 3.8+
-- TensorFlow 2.20.0
+- TensorFlow 2.20.0 (tensorflow[and-cuda]==2.20.0 para usar cuda)
 - datasets 4.1.1
 - numpy 2.3.3
 - scikit-learn 1.7.2
