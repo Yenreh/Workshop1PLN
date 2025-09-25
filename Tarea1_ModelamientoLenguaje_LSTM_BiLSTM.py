@@ -152,7 +152,6 @@ print(f"\nDivisión del conjunto:")
 print(f"X_train: {X_train.shape}, y_train: {y_train.shape}")
 print(f"X_test: {X_test.shape}, y_test: {y_test.shape}")
 
-# Nota: Usamos sparse_categorical_crossentropy, NO necesitamos one-hot encoding
 # ----------------------------
 # 6. Construir el modelo BiLSTM
 # ----------------------------
