@@ -1,18 +1,19 @@
 {
   "experiments": [
     {
-      "timestamp": "2025-09-25T18:19:12.687750",
       "configuration": {
         "model_type": "LSTM",
         "embedding_dim": 300,
         "lstm_units": 128,
         "dense_units": 128,
         "epochs": 30,
-        "batch_size": 128,
+        "batch_size": 512,
         "learning_rate": 0.001,
         "dataset_take": 5000,
         "max_len": 50,
         "padding_type": "pre",
+        "dropout_rate": 0.2,
+        "patience": 15,
         "min_words_per_sentence": 4,
         "gpu_used": true
       },
@@ -23,104 +24,144 @@
         "dataset_name": "jhonparra18/spanish_billion_words_clean"
       },
       "training_results": {
-        "final_train_loss": 4.345649242401123,
-        "final_train_accuracy": 0.19766920804977417,
-        "final_val_loss": 6.876570701599121,
-        "final_val_accuracy": 0.12441025674343109,
-        "epochs_trained": 10,
+        "final_train_loss": 4.059822082519531,
+        "final_train_accuracy": 0.21802844107151031,
+        "final_val_loss": 7.234105110168457,
+        "final_val_accuracy": 0.12317948788404465,
+        "epochs_trained": 21,
         "model_parameters": 5166228
       },
       "evaluation_metrics": {
-        "perplexity": 484.90776386237286,
-        "perplexity_interpretation": "Regular"
+        "perplexity": 519.7085571289062,
+        "perplexity_interpretation": "Pobre"
       },
       "experiment_id": 1
     },
     {
-      "timestamp": "2025-09-25T18:22:51.554893",
       "configuration": {
-        "model_type": "BiLSTM",
+        "model_type": "LSTM",
         "embedding_dim": 300,
         "lstm_units": 128,
         "dense_units": 128,
         "epochs": 30,
-        "batch_size": 128,
+        "batch_size": 512,
         "learning_rate": 0.001,
-        "dataset_take": 5000,
+        "dataset_take": 20000,
         "max_len": 50,
         "padding_type": "pre",
+        "dropout_rate": 0.2,
+        "patience": 15,
         "min_words_per_sentence": 4,
         "gpu_used": true
       },
       "dataset_info": {
-        "vocab_size": 11492,
-        "train_samples": 97499,
-        "test_samples": 24375,
+        "vocab_size": 30415,
+        "train_samples": 380267,
+        "test_samples": 95067,
         "dataset_name": "jhonparra18/spanish_billion_words_clean"
       },
       "training_results": {
-        "final_train_loss": 4.424537181854248,
-        "final_train_accuracy": 0.1930665820837021,
-        "final_val_loss": 6.776916027069092,
-        "final_val_accuracy": 0.12487179785966873,
-        "epochs_trained": 10,
-        "model_parameters": 5402260
+        "final_train_loss": 3.732741117477417,
+        "final_train_accuracy": 0.2619250416755676,
+        "final_val_loss": 8.129246711730957,
+        "final_val_accuracy": 0.11345885694026947,
+        "epochs_trained": 20,
+        "model_parameters": 13284195
       },
       "evaluation_metrics": {
-        "perplexity": 525.6706395095501,
+        "perplexity": 500.85955810546875,
         "perplexity_interpretation": "Pobre"
       },
       "experiment_id": 2
     },
     {
-      "timestamp": "2025-09-25T19:57:53.556052",
       "configuration": {
         "model_type": "LSTM",
         "embedding_dim": 300,
         "lstm_units": 128,
         "dense_units": 128,
         "epochs": 30,
-        "batch_size": 128,
+        "batch_size": 512,
         "learning_rate": 0.001,
-        "dataset_take": 20000,
+        "dataset_take": 50000,
         "max_len": 50,
         "padding_type": "pre",
+        "dropout_rate": 0.2,
+        "patience": 15,
         "min_words_per_sentence": 4,
         "gpu_used": true
       },
       "dataset_info": {
-        "vocab_size": 30415,
-        "train_samples": 380267,
-        "test_samples": 95067,
+        "vocab_size": 63944,
+        "train_samples": 955451,
+        "test_samples": 238863,
         "dataset_name": "jhonparra18/spanish_billion_words_clean"
       },
       "training_results": {
-        "final_train_loss": 4.533870697021484,
-        "final_train_accuracy": 0.1988409459590912,
-        "final_val_loss": 7.194999694824219,
-        "final_val_accuracy": 0.1242012232542038,
-        "epochs_trained": 8,
-        "model_parameters": 13284195
+        "final_train_loss": 3.3926608562469482,
+        "final_train_accuracy": 0.33287718892097473,
+        "final_val_loss": 8.182343482971191,
+        "final_val_accuracy": 0.16716119647026062,
+        "epochs_trained": 19,
+        "model_parameters": 27668136
       },
       "evaluation_metrics": {
-        "perplexity": 537.7288807045035,
-        "perplexity_interpretation": "Pobre"
+        "perplexity": 398.90631103515625,
+        "perplexity_interpretation": "Regular"
       },
       "experiment_id": 3
     },
     {
-      "timestamp": "2025-09-25T20:19:45.912357",
       "configuration": {
         "model_type": "BiLSTM",
         "embedding_dim": 300,
         "lstm_units": 128,
         "dense_units": 128,
         "epochs": 30,
-        "batch_size": 128,
+        "batch_size": 512,
+        "learning_rate": 0.001,
+        "dataset_take": 5000,
+        "max_len": 50,
+        "padding_type": "pre",
+        "dropout_rate": 0.2,
+        "patience": 15,
+        "min_words_per_sentence": 4,
+        "gpu_used": true
+      },
+      "dataset_info": {
+        "vocab_size": 11492,
+        "train_samples": 97499,
+        "test_samples": 24375,
+        "dataset_name": "jhonparra18/spanish_billion_words_clean"
+      },
+      "training_results": {
+        "final_train_loss": 3.8647046089172363,
+        "final_train_accuracy": 0.2292080670595169,
+        "final_val_loss": 7.4666876792907715,
+        "final_val_accuracy": 0.11471794545650482,
+        "epochs_trained": 22,
+        "model_parameters": 5402260
+      },
+      "evaluation_metrics": {
+        "perplexity": 509.8725891113281,
+        "perplexity_interpretation": "Pobre"
+      },
+      "experiment_id": 4
+    },
+    {
+      "configuration": {
+        "model_type": "BiLSTM",
+        "embedding_dim": 300,
+        "lstm_units": 128,
+        "dense_units": 128,
+        "epochs": 30,
+        "batch_size": 512,
         "learning_rate": 0.001,
         "dataset_take": 20000,
         "max_len": 50,
         "padding_type": "pre",
+        "dropout_rate": 0.2,
+        "patience": 15,
         "min_words_per_sentence": 4,
         "gpu_used": true
       },
@@ -131,18 +172,55 @@
         "dataset_name": "jhonparra18/spanish_billion_words_clean"
       },
       "training_results": {
-        "final_train_loss": 4.573281288146973,
-        "final_train_accuracy": 0.1974833458662033,
-        "final_val_loss": 7.255810737609863,
-        "final_val_accuracy": 0.1244773417711258,
-        "epochs_trained": 8,
+        "final_train_loss": 3.6681108474731445,
+        "final_train_accuracy": 0.26849278807640076,
+        "final_val_loss": 8.269684791564941,
+        "final_val_accuracy": 0.11368238180875778,
+        "epochs_trained": 19,
         "model_parameters": 13520227
       },
       "evaluation_metrics": {
-        "perplexity": 519.9885189686114,
+        "perplexity": 512.20654296875,
         "perplexity_interpretation": "Pobre"
       },
-      "experiment_id": 4
+      "experiment_id": 5
+    },
+    {
+      "configuration": {
+        "model_type": "BiLSTM",
+        "embedding_dim": 300,
+        "lstm_units": 128,
+        "dense_units": 128,
+        "epochs": 30,
+        "batch_size": 512,
+        "learning_rate": 0.001,
+        "dataset_take": 50000,
+        "max_len": 50,
+        "padding_type": "pre",
+        "dropout_rate": 0.2,
+        "patience": 15,
+        "min_words_per_sentence": 4,
+        "gpu_used": true
+      },
+      "dataset_info": {
+        "vocab_size": 63944,
+        "train_samples": 955451,
+        "test_samples": 238863,
+        "dataset_name": "jhonparra18/spanish_billion_words_clean"
+      },
+      "training_results": {
+        "final_train_loss": 3.1778364181518555,
+        "final_train_accuracy": 0.3579923212528229,
+        "final_val_loss": 8.515151977539062,
+        "final_val_accuracy": 0.16441380977630615,
+        "epochs_trained": 19,
+        "model_parameters": 27904168
+      },
+      "evaluation_metrics": {
+        "perplexity": 400.4700622558594,
+        "perplexity_interpretation": "Regular"
+      },
+      "experiment_id": 6
     }
   ]
 }
