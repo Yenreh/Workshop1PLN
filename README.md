@@ -120,14 +120,6 @@ pip install tensorflow datasets numpy scikit-learn matplotlib
 - numpy 2.3.3
 - scikit-learn 1.7.2
 
-## Resultados de Ejemplo
-
-Con dataset de 50,000 muestras:
-- **Vocabulario:** ~15,000-30,000 palabras
-- **Secuencias de entrenamiento:** ~400,000-800,000
-- **Perplejidad típica:** 50-200 (Bueno-Aceptable)
-- **Tiempo de entrenamiento:** 30-60 minutos (CPU)
-
 ## Variantes del Modelo
 
 ### Para experimentar con diferentes configuraciones:
