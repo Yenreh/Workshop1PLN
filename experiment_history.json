@@ -71,6 +71,78 @@
         "perplexity_interpretation": "Pobre"
       },
       "experiment_id": 2
+    },
+    {
+      "timestamp": "2025-09-25T19:57:53.556052",
+      "configuration": {
+        "model_type": "LSTM",
+        "embedding_dim": 300,
+        "lstm_units": 128,
+        "dense_units": 128,
+        "epochs": 30,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "dataset_take": 20000,
+        "max_len": 50,
+        "padding_type": "pre",
+        "min_words_per_sentence": 4,
+        "gpu_used": true
+      },
+      "dataset_info": {
+        "vocab_size": 30415,
+        "train_samples": 380267,
+        "test_samples": 95067,
+        "dataset_name": "jhonparra18/spanish_billion_words_clean"
+      },
+      "training_results": {
+        "final_train_loss": 4.533870697021484,
+        "final_train_accuracy": 0.1988409459590912,
+        "final_val_loss": 7.194999694824219,
+        "final_val_accuracy": 0.1242012232542038,
+        "epochs_trained": 8,
+        "model_parameters": 13284195
+      },
+      "evaluation_metrics": {
+        "perplexity": 537.7288807045035,
+        "perplexity_interpretation": "Pobre"
+      },
+      "experiment_id": 3
+    },
+    {
+      "timestamp": "2025-09-25T20:19:45.912357",
+      "configuration": {
+        "model_type": "BiLSTM",
+        "embedding_dim": 300,
+        "lstm_units": 128,
+        "dense_units": 128,
+        "epochs": 30,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "dataset_take": 20000,
+        "max_len": 50,
+        "padding_type": "pre",
+        "min_words_per_sentence": 4,
+        "gpu_used": true
+      },
+      "dataset_info": {
+        "vocab_size": 30415,
+        "train_samples": 380267,
+        "test_samples": 95067,
+        "dataset_name": "jhonparra18/spanish_billion_words_clean"
+      },
+      "training_results": {
+        "final_train_loss": 4.573281288146973,
+        "final_train_accuracy": 0.1974833458662033,
+        "final_val_loss": 7.255810737609863,
+        "final_val_accuracy": 0.1244773417711258,
+        "epochs_trained": 8,
+        "model_parameters": 13520227
+      },
+      "evaluation_metrics": {
+        "perplexity": 519.9885189686114,
+        "perplexity_interpretation": "Pobre"
+      },
+      "experiment_id": 4
     }
   ]
 }
